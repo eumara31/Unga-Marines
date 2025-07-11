@@ -87,7 +87,7 @@ SUBSYSTEM_DEF(chat)
 	payload.resends += 1
 	send_payload_to_client(client, client_history[sequence])
 	SSblackbox.record_feedback(
-		FEEDBACK_NESTED_TALLY,
+		"nested tally",
 		"chat_resend_byond_version",
 		1,
 		list(

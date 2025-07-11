@@ -14,9 +14,12 @@
 	)
 	worn_icon_state = "shard-glass"
 	attack_verb = list("stabs", "slashes", "slices", "cuts")
-	hitsound = 'sound/weapons/bladeslice.ogg'
 	var/source_sheet_type = /obj/item/stack/sheet/glass/glass
 	var/shardsize = TRUE
+
+/obj/item/shard/attack(mob/living/carbon/M, mob/living/carbon/user)
+	playsound(loc, 'sound/weapons/bladeslice.ogg', 25, 1, 6)
+	return ..()
 
 //Override to ignore the message
 /obj/item/shard/ex_act(severity, explosion_direction)

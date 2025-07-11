@@ -496,9 +496,6 @@
 	icon_state = "stan4"
 	plane = GAME_PLANE
 
-/turf/closed/shuttle/ert/engines
-	name = "engine"
-
 /turf/closed/shuttle/ert/engines/left
 	icon_state = "leftengine_1"
 
